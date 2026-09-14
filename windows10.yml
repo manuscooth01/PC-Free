@@ -11,8 +11,14 @@ services:
     cap_add:
       - NET_ADMIN
     ports:
-      - "8006:8006"
       - "3389:3389/tcp"
+      - "47984:47984/tcp"
+      - "47989:47989/tcp"
+      - "47990:47990/tcp"
+      - "48010:48010/tcp"
+      - "47998-48000:47998-48000/udp"
+      - "48002:48002/udp"
+      - "48010:48010/udp"
     volumes:
       - /tmp/docker-data/storage:/storage
       - windows-data:/mnt/windows-data
